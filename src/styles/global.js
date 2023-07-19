@@ -20,20 +20,24 @@ export default createGlobalStyle`
   }
 
   body, input, button, textarea {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'League Spartan', sans-serif;
     outline: none;
   }
 
+  li {
+    list-style: none;
+  }
+  
   a {
     text-decoration: none;
   }
 
-  button, a {
+  button, a, li {
     cursor: pointer;
     transition: filter 0.2s;
   }
 
-  button:hover, a:hover {
+  button:hover, a:hover, li:hover {
     filter: brightness(0.9)
   }
 
