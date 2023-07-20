@@ -9,7 +9,7 @@ export default {
 
     WHITE: '#F4EDE8',
 
-    BUTTON_FONT: '#312E38',
+    FONT_COLOR: '#312E38',
     TAG_COLOR: '#E5E5E5',
     DESCRIPTION: '#999591',
 
