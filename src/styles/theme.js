@@ -15,7 +15,7 @@ export default {
 
     BORDER_BOTTOM: '#3E3B47',
 
-    PINK_300: '#FF859B',
+    BLUE_300: '#018E95',
     PINK_100: 'rgba(255, 133, 155, 0.05)'
   }
 }

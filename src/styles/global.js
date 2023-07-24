@@ -47,7 +47,7 @@ export default createGlobalStyle`
   }
   
   ::-webkit-scrollbar-thumb {
-    background-color: ${({ theme }) => theme.COLORS.PINK_300};
+    background-color: ${({ theme }) => theme.COLORS.BLUE_300};
     border-radius: 0.8rem;
   }
 

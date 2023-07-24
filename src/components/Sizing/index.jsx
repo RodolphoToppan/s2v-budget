@@ -1,5 +1,8 @@
+import { FiPlus } from 'react-icons/fi'
+
 import { Input } from '../Input'
-import { Container, Content, Selection } from './styles'
+import { InputRadio } from '../InputRadio'
+import { Button, Container, Content, Footer, Form, Selection } from './styles'
 
 export function Sizing() {
   return (
@@ -7,16 +10,36 @@ export function Sizing() {
       <h2>Dimensionamento</h2>
       <Content>
         <h3>UC1</h3>
-        <Selection>
-          <h4>Tipo</h4>
-          <Input value="GERADORA" type="button" />
-          <Input value="BENEFICIÁRIA" type="button" />
-        </Selection>
-        <Selection>
-          <h4>Ligação</h4>
-          <Input value="BIFÁSICA" type="button" />
-          <Input value="TRIFÁSICA" type="button" />
-        </Selection>
+        <Form>
+          <Selection>
+            <h4>Tipo</h4>
+            <InputRadio name="tipo" id="GERADORA" />
+            <InputRadio name="tipo" id="BENEFICIÁRIA" />
+          </Selection>
+
+          <Selection>
+            <h4>Ligação</h4>
+            <InputRadio name="ligacao" id="BIFÁSICA" />
+            <InputRadio name="ligacao" id="TRIFÁSICA" />
+          </Selection>
+
+          <Selection>
+            <h4>Tarifa</h4>
+            <Input type="number" />
+          </Selection>
+
+          <Selection>
+            <h4>IP (R$)</h4>
+            <Input type="number" />
+          </Selection>
+        </Form>
+
+        <Footer>
+          <Button id="add">
+            <FiPlus />
+          </Button>
+          <label htmlFor="add">Adicionar Consumo (kWh)</label>
+        </Footer>
       </Content>
     </Container>
   )
