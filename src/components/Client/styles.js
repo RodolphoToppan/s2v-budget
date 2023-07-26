@@ -6,29 +6,29 @@ export const Container = styled.section`
 
   width: 100%;
 
-  padding: 1.5rem;
+  padding: 2.5rem;
 
-  gap: 1.5rem;
+  gap: 2rem;
 
   font-size: 2rem;
-`
-
-export const Content = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  gap: 0.8rem;
 
   input {
-    height: 2.4rem;
-    min-width: 18rem;
+    height: 100%;
+    width: 100%;
 
     padding: 0.8rem;
 
     color: ${({ theme }) => theme.COLORS.FONT_COLOR};
     font-weight: 400;
 
-    border-radius: 0.6rem;
+    border-radius: 2rem;
+  }
+
+  :nth-child(odd) div.cut {
+    width: 5.8rem;
+  }
+
+  :last-child div.cut {
+    width: 4.8rem;
   }
 `

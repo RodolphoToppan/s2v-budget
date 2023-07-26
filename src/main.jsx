@@ -9,6 +9,7 @@ import { Header } from './components/Header'
 import { Client } from './components/Client'
 import { Sizing } from './components/Sizing'
 import { Summary } from './components/Summary'
+import { Pricing } from './components/Pricing'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Client />
       <Sizing />
       <Summary />
+      <Pricing />
     </ThemeProvider>
   </React.StrictMode>
 )

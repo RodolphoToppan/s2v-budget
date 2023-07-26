@@ -13,14 +13,14 @@ export function Sizing() {
         <Form>
           <Selection>
             <h4>Tipo</h4>
-            <InputRadio name="tipo" id="GERADORA" />
-            <InputRadio name="tipo" id="BENEFICIÁRIA" />
+            <InputRadio name="tipo" id="geradora" value="GERADORA" />
+            <InputRadio name="tipo" id="beneficiaria" value="BENEFICIÁRIA" />
           </Selection>
 
           <Selection>
             <h4>Ligação</h4>
-            <InputRadio name="ligacao" id="BIFÁSICA" />
-            <InputRadio name="ligacao" id="TRIFÁSICA" />
+            <InputRadio name="ligacao" id="bifasica" value="BIFÁSICA" />
+            <InputRadio name="ligacao" id="trifasica" value="TRIFÁSICA" />
           </Selection>
 
           <Selection>

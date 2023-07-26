@@ -1,25 +1,23 @@
-import { Input } from '../Input'
-import { Container, Content } from './styles'
+import { InputClient } from '../InputClient'
+import { Container } from './styles'
 
 export function Client() {
   return (
     <Container>
-      <Content>
-        <label htmlFor="clientName">Cliente:</label>
-        <Input type="text" id="clientName" />
-      </Content>
-      <Content>
-        <label htmlFor="clientAddress">Endereço:</label>
-        <Input id="clientAddress" type="text" />
-      </Content>
-      <Content>
-        <label htmlFor="clientCity">Cidade: </label>
-        <Input id="clientCity" type="text" />
-      </Content>
-      <Content>
-        <label htmlFor="uc">UC(s): </label>
-        <Input id="uc" type="text" />
-      </Content>
+      <InputClient
+        id="clientName"
+        type="text"
+        value="Cliente"
+        placeholder=" "
+      />
+      <InputClient
+        id="clientAddress"
+        type="text"
+        value="Endereço"
+        placeholder=" "
+      />
+      <InputClient id="clientCity" type="text" value="Cidade" placeholder=" " />
+      <InputClient id="uc" type="text" value="UC(s)" placeholder=" " />
     </Container>
   )
 }
