@@ -21,6 +21,8 @@ export const Content = styled.div`
 
   padding: 1rem;
 
+  row-gap: 1rem;
+
   width: 100%;
   height: 100%;
 
@@ -29,12 +31,17 @@ export const Content = styled.div`
   background-color: ${({ theme }) => theme.COLORS.WHITE};
   color: ${({ theme }) => theme.COLORS.FONT_COLOR};
 
-  h4 {
+  h3 {
     grid-area: title;
   }
 
+  label {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
   input {
-    width: 5.5rem;
+    width: 7rem;
   }
 `
 
@@ -49,6 +56,23 @@ export const Inverter = styled.div`
   justify-items: center;
   align-content: space-between;
   grid-area: inverter;
+
+  row-gap: 1rem;
+
+  .flexDisplay {
+    display: flex;
+    align-items: flex-end;
+
+    gap: 0.5rem;
+
+    label:last-child {
+      margin-bottom: 0.3rem;
+    }
+  }
+`
+
+export const Select = styled.select`
+  display: flex;
 `
 
 export const Voltage = styled.div`
@@ -77,5 +101,12 @@ export const Voltage = styled.div`
 `
 
 export const Price = styled.div`
+  display: grid;
+  justify-items: center;
+
   grid-area: price;
+
+  input {
+    width: 13rem;
+  }
 `

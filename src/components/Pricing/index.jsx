@@ -1,39 +1,65 @@
 import { Input } from '../Input'
 import { InputRadio } from '../InputRadio'
-import { Container, Content, Inverter, Modules, Price, Voltage } from './styles'
+import { Option } from '../Option'
+import {
+  Container,
+  Content,
+  Inverter,
+  Modules,
+  Price,
+  Select,
+  Voltage
+} from './styles'
 
 export function Pricing() {
   return (
     <Container>
-      <h3>Precificação</h3>
+      <h2>Precificação</h2>
       <Content>
-        <h4>Kit 01</h4>
+        <h3>Kit 01</h3>
 
         <Modules>
-          <h5>Módulos</h5>
+          <h4>Módulos</h4>
 
-          <Input id="amount" type="number" value="Quantidade" />
-          <Input id="brand" type="" value="Marca" />
-          <Input id="power" type="number" value="Potência" />
+          <Input id="moduleAmount" type="number" value="Quantidade" />
+          <label htmlFor="modulesBrands">Marcas</label>
+          <Select id="modulesBrands" name="">
+            <Option value="Canadian" />
+            <Option value="JA" />
+            <Option value="Sunova" />
+          </Select>
+          <Input id="modulePower" type="number" value="Potência" />
         </Modules>
 
         <Inverter>
-          <h5>Inversor</h5>
+          <h4>Inversor</h4>
 
-          <Input id="amount" type="number" value="Quantidade" />
-          <Input id="brand" type="" value="Marca" />
+          <Input id="inverterAmount" type="number" value="Quantidade" />
+          <label htmlFor="inverterBrands">Marcas</label>
+          <Select id="inverterBrands">
+            <Option value="Growatt" />
+            <Option value="Deye" />
+            <Option value="Micro Deye" />
+          </Select>
           <Voltage>
             <label htmlFor="voltage">Tensão</label>
             <InputRadio value="220V" name="voltage" id="v220" />
             <InputRadio value="380V" name="voltage" id="v380" />
             <InputRadio value="800V" name="voltage" id="v800" />
           </Voltage>
-          <Input id="power" type="number" value="Potência" />
-          <label htmlFor="power">kW</label>
+          <div className="flexDisplay">
+            <Input id="inverterPower" type="number" value="Potência" />
+            <label htmlFor="power">kW</label>
+          </div>
         </Inverter>
 
         <Price>
-          <Input id="kitPrice" type="number" content="Preço do kit " />
+          <Input
+            id="kitPrice"
+            type="number"
+            content="Preço do kit "
+            value="Preço do kit"
+          />
         </Price>
       </Content>
     </Container>

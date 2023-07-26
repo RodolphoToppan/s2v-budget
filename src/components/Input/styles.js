@@ -1,11 +1,10 @@
 import { styled } from 'styled-components'
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  display: grid;
+  justify-items: center;
 
-  gap: 1rem;
+  gap: 0.3rem;
 
   input {
     padding: 0.2rem 1rem;
