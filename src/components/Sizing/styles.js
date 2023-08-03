@@ -36,6 +36,16 @@ export const Form = styled.form`
 
   width: 100%;
   padding: 1rem;
+
+  label {
+    font-weight: 700;
+  }
+
+  input[type='number'] {
+    width: 8rem;
+
+    padding-top: 0.4rem;
+  }
 `
 
 export const Selection = styled.div`
@@ -44,12 +54,6 @@ export const Selection = styled.div`
   align-items: center;
 
   gap: 1rem;
-
-  input[type='number'] {
-    width: 8rem;
-
-    padding-top: 0.4rem;
-  }
 `
 
 export const Button = styled.button`

@@ -1,11 +1,10 @@
 import { styled } from 'styled-components'
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  display: grid;
+  justify-items: center;
 
-  gap: 1rem;
+  gap: 0.3rem;
 
   input {
     padding: 0.2rem 1rem;
@@ -16,5 +15,7 @@ export const Container = styled.div`
 
     border: none;
     border-radius: 1.3rem;
+
+    text-align: center;
   }
 `

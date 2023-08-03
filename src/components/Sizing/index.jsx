@@ -23,15 +23,8 @@ export function Sizing() {
             <InputRadio name="ligacao" id="trifasica" value="TRIFÁSICA" />
           </Selection>
 
-          <Selection>
-            <h4>Tarifa</h4>
-            <Input type="number" />
-          </Selection>
-
-          <Selection>
-            <h4>IP (R$)</h4>
-            <Input type="number" />
-          </Selection>
+          <Input type="number" id="tarifa" value="Tarifa" />
+          <Input type="number" id="ip" value="IP (R$)" />
         </Form>
 
         <Footer>

@@ -13,6 +13,7 @@ export const Container = styled.section`
 export const Content = styled.div`
   display: grid;
   justify-items: center;
+  justify-content: space-between;
 
   grid-template-areas:
     'title title'
@@ -20,6 +21,8 @@ export const Content = styled.div`
     'price price';
 
   padding: 1rem;
+
+  row-gap: 1rem;
 
   width: 100%;
   height: 100%;
@@ -31,10 +34,19 @@ export const Content = styled.div`
 
   h4 {
     grid-area: title;
+    font-size: 1.8rem;
+  }
+
+  h5 {
+    font-size: 1.6rem;
+  }
+
+  label {
+    font-size: 1.4rem;
   }
 
   input {
-    width: 5.5rem;
+    width: 10rem;
   }
 `
 
@@ -49,6 +61,18 @@ export const Inverter = styled.div`
   justify-items: center;
   align-content: space-between;
   grid-area: inverter;
+
+  row-gap: 1rem;
+
+  #adjust {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+
+    label:last-child {
+      margin-bottom: 0.3rem;
+    }
+  }
 `
 
 export const Voltage = styled.div`
