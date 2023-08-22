@@ -1,4 +1,4 @@
-import { styled } from 'styled-components'
+import { styled } from "styled-components";
 
 export const Container = styled.section`
   display: grid;
@@ -8,7 +8,7 @@ export const Container = styled.section`
   margin-top: 1rem;
 
   font-size: 1.7rem;
-`
+`;
 
 export const Content = styled.div`
   display: grid;
@@ -16,9 +16,9 @@ export const Content = styled.div`
   justify-content: space-between;
 
   grid-template-areas:
-    'title title'
-    'modules inverter'
-    'price price';
+    "title title"
+    "modules inverter"
+    "price price";
 
   padding: 1rem;
 
@@ -32,12 +32,12 @@ export const Content = styled.div`
   background-color: ${({ theme }) => theme.COLORS.WHITE};
   color: ${({ theme }) => theme.COLORS.FONT_COLOR};
 
-  h4 {
+  h3 {
     grid-area: title;
     font-size: 1.8rem;
   }
 
-  h5 {
+  h4 {
     font-size: 1.6rem;
   }
 
@@ -48,14 +48,14 @@ export const Content = styled.div`
   input {
     width: 10rem;
   }
-`
+`;
 
 export const Modules = styled.div`
   display: grid;
   justify-items: center;
   align-content: space-between;
   grid-area: modules;
-`
+`;
 export const Inverter = styled.div`
   display: grid;
   justify-items: center;
@@ -73,15 +73,15 @@ export const Inverter = styled.div`
       margin-bottom: 0.3rem;
     }
   }
-`
+`;
 
 export const Voltage = styled.div`
   display: grid;
   justify-items: center;
 
   grid-template-areas:
-    'volt volt volt'
-    'v220 v380 v800';
+    "volt volt volt"
+    "v220 v380 v800";
 
   label:nth-child(1) {
     grid-area: volt;
@@ -98,8 +98,8 @@ export const Voltage = styled.div`
   label:nth-child(4) {
     grid-area: v220;
   }
-`
+`;
 
 export const Price = styled.div`
   grid-area: price;
-`
+`;

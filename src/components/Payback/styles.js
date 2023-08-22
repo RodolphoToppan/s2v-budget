@@ -10,9 +10,9 @@ export const Container = styled.section`
 
   padding: 1.5rem;
 
-  h3 {
+  h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   p {

@@ -11,49 +11,29 @@ export const Container = styled.section`
 `;
 
 export const Content = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding-top: 1rem;
-  width: 100%;
-
-  border: 1.5px solid ${({ theme }) => theme.COLORS.GREY_300};
-  border-radius: 2rem;
-
-  h3 {
-    margin: 2rem 0 0;
-  }
-`;
-
-export const Form = styled.form`
   display: grid;
-  justify-content: space-evenly;
   justify-items: center;
 
-  gap: 2rem;
-  grid-template-areas: "title title";
-
-  width: 100%;
   padding: 1rem;
 
+  row-gap: 1rem;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 2rem;
+
+  background-color: ${({ theme }) => theme.COLORS.WHITE};
+  color: ${({ theme }) => theme.COLORS.FONT_COLOR};
+
   label {
+    font-size: 1.6rem;
     font-weight: 700;
   }
 
-  input[type="number"] {
-    width: 8rem;
-
-    padding-top: 0.4rem;
+  input {
+    width: 10rem;
   }
-`;
-
-export const Selection = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  gap: 1rem;
 `;
 
 export const Button = styled.button`
@@ -61,10 +41,10 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
 
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
 
-  background: none;
+  background: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
   border: 3px solid ${({ theme }) => theme.COLORS.GRAY_300};
   border-radius: 50%;
@@ -85,6 +65,6 @@ export const Footer = styled.footer`
   flex-direction: column;
   align-items: center;
 
-  gap: 1.5rem;
-  margin: 2rem 0;
+  gap: 0.5rem;
+  margin: 1rem 0;
 `;

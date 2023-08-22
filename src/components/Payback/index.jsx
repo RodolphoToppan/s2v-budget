@@ -3,7 +3,7 @@ import { Container, Content, Return, Savings } from "./styles.js";
 export function Payback() {
   return (
     <Container>
-      <h3>Retorno financeiro</h3>
+      <h2>Retorno financeiro</h2>
       <Content>
         <Return>
           <p>
@@ -16,7 +16,7 @@ export function Payback() {
           </p>
         </Return>
 
-        <h3>Economia</h3>
+        <h2>Economia</h2>
         <Savings>
           <p>
             Mensal: <br />

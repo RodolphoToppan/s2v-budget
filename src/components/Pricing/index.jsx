@@ -1,18 +1,25 @@
-import { Input } from '../Input'
-import { InputRadio } from '../InputRadio'
-import { InverterBrands } from '../InverterBrands'
-import { ModuleBrands } from '../ModuleBrands'
-import { Container, Content, Inverter, Modules, Price, Voltage } from './styles'
+import { Input } from "../Input";
+import { InputRadio } from "../InputRadio";
+import { InverterBrands } from "../InverterBrands";
+import { ModuleBrands } from "../ModuleBrands";
+import {
+  Container,
+  Content,
+  Inverter,
+  Modules,
+  Price,
+  Voltage,
+} from "./styles";
 
 export function Pricing() {
   return (
     <Container>
-      <h3>Precificação</h3>
+      <h2>Precificação</h2>
       <Content>
-        <h4>Kit 01</h4>
+        <h3>Kit 01</h3>
 
         <Modules>
-          <h5>Módulos</h5>
+          <h4>Módulos</h4>
 
           <Input id="modulesAmount" type="number" value="Quantidade" />
           <ModuleBrands />
@@ -21,7 +28,7 @@ export function Pricing() {
         </Modules>
 
         <Inverter>
-          <h5>Inversor</h5>
+          <h4>Inversor</h4>
 
           <Input id="inverterAmount" type="number" value="Quantidade" />
           <InverterBrands />
@@ -42,5 +49,5 @@ export function Pricing() {
         </Price>
       </Content>
     </Container>
-  )
+  );
 }
